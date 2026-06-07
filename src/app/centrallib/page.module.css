@@ -1,0 +1,331 @@
+/* ===============================
+   BASE
+================================ */
+.container {
+  --bg-main: var(--bg);
+  --bg-soft: var(--softBg);
+  --bg-card: var(--surface);
+  --text-main: var(--textColor);
+  --text-muted: var(--softTextColor);
+  --border-soft: var(--border);
+  --accent-soft: var(--border);
+  --shadow-soft: var(--shadow);
+
+  padding: 20px;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.textContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.textContainer p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--accent-soft);
+}
+
+.username {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   HERO IMAGE
+================================ */
+.heroImage {
+  margin: 30px 0;
+}
+
+.image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.content {
+  display: flex;
+  gap: 40px;
+}
+
+.post {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  border-left: 1px solid var(--border-soft);
+  padding-left: 20px;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+/* ===============================
+   BUTTONS (SMOOTH)
+================================ */
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.buttonGroup button {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: transparent;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+}
+
+.buttonGroup button:hover {
+  background: var(--bg-soft);
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   SUB SECTION
+================================ */
+.subSection {
+  margin-top: 15px;
+  padding-left: 15px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   CENTRAL LIBRARY
+================================ */
+.librarySection {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border-soft);
+  margin-bottom: 50px;
+  transition: background 0.3s ease;
+}
+
+.librarySection h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.libraryContent {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.libraryText {
+  flex: 1;
+  line-height: 1.8;
+}
+
+.libraryText p {
+  margin-bottom: 15px;
+}
+
+.libraryText ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.libraryText li {
+  margin-bottom: 8px;
+}
+
+/* Library Images */
+.libraryImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.libraryImage {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.libraryImage:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   FEEDBACK
+================================ */
+.comment {
+  margin-top: 40px;
+}
+
+.comment textarea {
+  width: 100%;
+  min-height: 90px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  color: var(--text-main);
+  transition: border 0.3s ease;
+}
+
+.comment textarea:focus {
+  border-color: var(--accent-soft);
+  outline: none;
+}
+
+.comment textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.feedbackInput button {
+  margin-top: 12px;
+  padding: 8px 22px;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-soft);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.feedbackInput button:hover {
+  background: var(--accent-soft);
+  color: var(--bg-main);
+}
+
+.feedbackList li {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   FLOATING SPEECH
+================================ */
+.speechFloating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .libraryContent {
+    flex-direction: column;
+  }
+
+  .librarySection {
+    padding: 25px;
+  }
+
+  .infoContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .textContainer h1 {
+    font-size: 1.6rem;
+  }
+}
+
+
+.container {
+  position: relative;              /* allow overlay positioning */
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+
+  /* Background image */
+  background-image: url("/libbacK.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;          /* fallback */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* black overlay with 40% opacity */
+  z-index: 0;                       /* behind text */
+}
+
+.container * {
+  position: relative;
+  z-index: 1;                       /* ensure text is above overlay */
+}

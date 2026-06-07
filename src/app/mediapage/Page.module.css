@@ -1,0 +1,155 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.userImageContainer {
+  margin-right: 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.userTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.speechFloating {
+  position: static;
+  margin-top: 1rem;
+}
+
+.heroImage {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.space {
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.post {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.subSection {
+  margin: 1rem 0;
+}
+
+.sectionContent {
+  margin-top: 1rem;
+}
+
+.sectionContent p {
+  margin-bottom: 1rem;
+}
+
+.feedbackInput {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedbackInput textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.feedbackInput button {
+  margin-top: 0.5rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #0070f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.feedbackList {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.feedbackList li {
+  margin-bottom: 0.5rem;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.buttonGroup button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.buttonGroup button:hover {
+  background-color: #bbb;
+}
+
+.comment {
+  margin-top: 2rem;
+}

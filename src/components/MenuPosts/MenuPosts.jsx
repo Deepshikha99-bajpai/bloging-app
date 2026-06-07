@@ -15,11 +15,13 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>Travel</span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Wandering through places that feel like dreams,
+            collecting moments that turn into stories,
+            and finding myself in every new sunrise.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
+            <span className={styles.date}> - 10.03.2026</span>
           </div>
         </div>
       </Link>
@@ -34,11 +36,13 @@ const MenuPosts = ({ withImage }) => {
             Culture
           </span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Culture is the heartbeat of a place,
+            the stories people carry,
+          and the traditions that make every destination unique.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
+            <span className={styles.date}> - 10.03.2026</span>
           </div>
         </div>
       </Link>
@@ -51,11 +55,13 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.food}`}>Food</span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Food isn't just meant to be eaten,
+            it's meant to be experienced,
+            one delicious bite at a time.
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
+            <span className={styles.date}> - 10.03.2026</span>
           </div>
         </div>
       </Link>
@@ -70,11 +76,13 @@ const MenuPosts = ({ withImage }) => {
             Fashion
           </span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Fashion is more than style—
+              it's confidence, creativity,
+              and the art of expressing who you truly are
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
-            <span className={styles.date}> - 10.03.2023</span>
+            <span className={styles.date}> - 10.03.2026</span>
           </div>
         </div>
       </Link>

@@ -1,0 +1,266 @@
+/* General Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #ffe8d6;
+  border-bottom: 2px solid #f4a261;
+}
+
+.textContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #e76f51;
+}
+
+.textContainer p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 600px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.username {
+  font-weight: bold;
+  color: #2a9d8f;
+  display: block;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Hero Image */
+.heroImage {
+  margin: 20px 0;
+}
+
+.image {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+}
+
+.post {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  color: #e76f51;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+.buttonGroup {
+  margin-top: 15px;
+}
+
+.buttonGroup button {
+  margin-right: 12px;
+  padding: 10px 16px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.buttonGroup button:hover {
+  background: #21867a;
+}
+
+.sectionContent {
+  margin-top: 20px;
+  background: #f1faee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Food Culture Section */
+.librarySection {
+  margin-top: 50px;
+}
+
+.librarySection h2 {
+  margin-bottom: 20px;
+}
+
+.libraryIntro {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.libraryContent {
+  display: flex;
+  gap: 30px;
+}
+
+.libraryText {
+  flex: 2;
+}
+
+.libraryText p {
+  margin-bottom: 15px;
+}
+
+.libraryText ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.libraryText li {
+  margin-bottom: 8px;
+}
+
+.libraryImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.libraryImage {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Feedback Section */
+.comment {
+  margin-top: 50px;
+}
+
+.comment h2 {
+  margin-bottom: 20px;
+  color: #e76f51;
+}
+
+.feedbackInput {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedbackInput textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.feedbackInput button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  background: #f4a261;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedbackInput button:hover {
+  background: #e76f51;
+}
+
+.feedbackList {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.feedbackList li {
+  margin-bottom: 10px;
+  background: #f1faee;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Floating Speech Button */
+.speechFloating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.speechButton {
+  padding: 12px 20px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.speechButton:hover {
+  background: #21867a;
+}
+
+/* Subsection Styling */
+.subSection h3 {
+  margin-bottom: 10px;
+  color: #e76f51;
+}
+
+.subSection p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.subSection ul {
+  padding-left: 20px;
+}
+
+.subSection li {
+  margin-bottom: 8px;
+}

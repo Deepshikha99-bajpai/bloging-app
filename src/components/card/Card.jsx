@@ -6,24 +6,25 @@ const Card = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image src="/p1.jpeg"alt="" fill className={styles.image}/>
+        <Image src="/ims.png"alt="" fill className={styles.image}/>
       </div>
 
       <div className={styles.textContainer}>
         <div className={styles.detail}>
-          <span className={styles.date}>11.02.2023</span>
-          <span className={styles.category}>CULTURE</span>
+          <span className={styles.date}>11.02.2026</span>
+          <span className={styles.category}>Education</span>
         </div>
 
         <Link href="/" >
-          <h1 className={styles.title}>Please share my recent post</h1>
+          <h1 className={styles.title}>ims</h1>
         </Link>
 
         <p className={styles.desc}>
-          I've just launched my latest blog platform where I share fresh ideas, tips, and stories. Whether you're here for inspiration, learning, or just some good reads — you'll find it all in one place!
+          Empowering students with knowledge, skills, and opportunities for a
+            brighter future.
         </p>
 
-        <Link href="/" className={styles.link}>Read More</Link>
+        <Link href="/ims" className={styles.link}>Read More</Link>
 
         
         

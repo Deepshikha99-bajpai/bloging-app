@@ -17,8 +17,8 @@ const MenuCategories = () => {
       <Link href="/blog" className={`${styles.categoryItem} ${styles.food}`}>
         Food
       </Link>
-      <Link href="/blog" className={`${styles.categoryItem} ${styles.travel}`}>
-        Travel
+      <Link href="/blog" className={`${styles.categoryItem} ${styles.studyZone}`}>
+        studyZone
       </Link>
       <Link href="/blog" className={`${styles.categoryItem} ${styles.culture}`}>
         Culture

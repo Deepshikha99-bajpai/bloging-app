@@ -35,7 +35,7 @@ const Comments = () => {
             />
             <div className={styles.userInfo}>
               <span className={styles.username}>John Deo</span>
-              <span className={styles.date}>01.01.2023</span>
+              <span className={styles.date}>01.01.2026</span>
             </div>
           </div>
           <p>hyyy your video is amazing</p>

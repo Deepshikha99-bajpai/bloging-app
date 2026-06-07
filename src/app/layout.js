@@ -1,35 +1,28 @@
-'use client';
-import Navbar from "@/components/navbar/Navbar";
-import "./globals.css";
 import { Inter } from "next/font/google";
-import Footer from "@/components/footer/Footer";
-import { ThemeContextProvider } from "@/context/ThemeContext";
-import ThemeProvider from "@/providers/ThemeProvider";
+import "./globals.css";
+import AppProviders from "@/components/layout/AppProviders";
 
-
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata = {
-  title: 'Blog App',
-  description: 'The best blog app!',
-}
+  title: {
+    default: "DAVV Blog",
+    template: "%s | DAVV Blog",
+  },
+  description:
+    "Campus stories, culture, and student voices from Devi Ahilya Vishwavidyalaya.",
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeContextProvider>
-          <ThemeProvider>
-        <div className="container">
-          <div className="wrapper">
-            <Navbar/>
-            {children}
-            <Footer/>
-            </div>
-        </div>
-        </ThemeProvider>
-         </ThemeContextProvider>
-        </body>
+        <AppProviders>{children}</AppProviders>
+      </body>
     </html>
   );
 }

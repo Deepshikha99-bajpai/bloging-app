@@ -9,15 +9,15 @@ const CategoryList = () => {
       <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
 
-        <Link href="/blog?cat=style" className={`${styles.category} ${styles.style}`}>
+        <Link href="/blog?cat=colleges" className={`${styles.category} ${styles.colleges}`}>
           <Image 
             src="/style.png"
-            alt="style"
+            alt="college"
             width={32}
             height={32}
             className={styles.image}
           />
-          style
+          UTD's
         </Link>
 
         <Link href="/blog?cat=fashion" className={`${styles.category} ${styles.fashion}`}>
@@ -31,7 +31,7 @@ const CategoryList = () => {
           fashion
         </Link>
 
-        <Link href="/blog?cat=food" className={`${styles.category} ${styles.food}`}>
+       <Link href="/blog?cat=food" className={`${styles.category} ${styles.food}`}>
           <Image 
             src="/food.png"
             alt="food"
@@ -42,7 +42,7 @@ const CategoryList = () => {
           food
         </Link>
 
-        <Link href="/blog?cat=travel" className={`${styles.category} ${styles.travel}`}>
+        <Link href="/blog?cat=studyzone" className={`${styles.category} ${styles.studyzone}`}>
           <Image 
             src="/travel.png"
             alt="travel"
@@ -50,7 +50,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
-          travel
+          study zones
         </Link>
 
         <Link href="/blog?cat=culture" className={`${styles.category} ${styles.culture}`}>

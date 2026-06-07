@@ -8,11 +8,11 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.logo}>
-          <Image src="/logo.png" alt="lama blog" width={50} height={50} />
-          <h1 className={styles.logoText}>DeepshikhaBlog</h1>
+          <Image src="/davv.png" alt="lama blog" width={50} height={50} />
+          <h1 className={styles.logoText}>DAVV BLOG</h1>
         </div>
         <p className={styles.desc}>
-         DeepshikhaBlog is your go-to place for fresh ideas, insights, and inspiration.
+         DAVV Blog is your go-to place for fresh ideas, insights, and inspiration.
 It shares engaging articles on lifestyle, tech, and creativity.
 Every post is written with passion to keep readers informed and inspired.
 Join the community and explore a world of thoughtful content.
@@ -28,9 +28,9 @@ Join the community and explore a world of thoughtful content.
         <div className={styles.list}>
           <span className={styles.listTitle}>Links</span>
           <Link href="/">Homepage</Link>
-          <Link href="/">Blog</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/blog?cat=colleges">Blog</Link>
+          <Link href="/centrallib/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>

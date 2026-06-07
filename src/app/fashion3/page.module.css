@@ -1,0 +1,263 @@
+/* General Container */
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+  background: #fdfdfd; 
+  color: #333;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  flex-wrap: wrap; /* Prevents clipping on small screens */
+  gap: 20px;
+}
+
+.textContainer {
+  flex: 1;
+  min-width: 300px;
+}
+
+.textContainer h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem); /* Fluid typography */
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.2; /* Ensures heading doesn't cut in half vertically */
+}
+
+.textContainer p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #e91e63;
+}
+
+.username {
+  font-weight: bold;
+  display: block;
+  color: #222;
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Hero Image Section */
+.heroImage {
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+
+.image {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Main Content Layout */
+.content {
+  display: flex;
+  gap: 40px;
+}
+
+.post {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Sections & Typography */
+.section {
+  margin-bottom: 50px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffe1ed;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.subSection {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  margin-top: 15px;
+}
+
+.subSection h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.subSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subSection ul li {
+  background: #fff8fa;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #444;
+  border-left: 3px solid #e91e63;
+}
+
+/* Explore Interactivity */
+.exploreList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.exploreList h3 {
+  font-size: 1.2rem;
+  color: #444;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.exploreList h3:hover {
+  background: #e91e63;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Feedback Section */
+.comment {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.feedbackInput textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.feedbackInput button {
+  background: #222;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.feedbackInput button:hover {
+  background: #e91e63;
+  transform: translateY(-2px);
+}
+
+.feedbackList li {
+  background: #f1f1f1;
+  padding: 15px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Consolidated Floating Speech Button */
+.speechButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+/* Targets the button inside your FullPageSpeech component */
+.speechButton button {
+  background: #e91e63;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 50px; /* Rounded pill style for a floating action button */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.speechButton button:hover {
+  background: #222;
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Logic */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+  .speechButton {
+    bottom: 20px;
+    right: 20px;
+  }
+  .speechButton button {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+  }
+}

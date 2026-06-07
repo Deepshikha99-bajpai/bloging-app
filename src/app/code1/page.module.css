@@ -1,0 +1,323 @@
+/* Container & Theme Variable Setup */
+.container {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --accent-color: #0070f3;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --code-bg: #1e1e1e;
+  
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.dark {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --text-primary: #ededed;
+  --text-secondary: #a0a0a0;
+  --accent-color: #3291ff;
+  --border-color: #333333;
+  --card-bg: #161616;
+}
+
+/* Reading Progress Bar */
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--accent-color), #ff0080);
+  z-index: 9999;
+}
+
+/* Header & Brand */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.highlight {
+  color: var(--accent-color);
+  background: linear-gradient(to right, var(--accent-color), #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userBadge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card-bg);
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status {
+  font-size: 0.7rem;
+  color: #10b981;
+}
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  height: 450px;
+  margin: 2rem 10%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.heroImg {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.heroSection:hover .heroImg {
+  transform: scale(1.05);
+}
+
+.heroOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: white;
+}
+
+.tag {
+  background: var(--accent-color);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Main Content Layout */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  padding: 2rem 10%;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Theory Section */
+.theoryCard {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.theoryLine {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.lineNumber {
+  font-family: monospace;
+  color: var(--accent-color);
+  font-weight: bold;
+  min-width: 20px;
+}
+
+/* Code Snippet Box */
+.codeWrapper {
+  background: #121212;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.codeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dotRed { width: 12px; height: 12px; background: #ff5f56; border-radius: 50%; }
+.dotYellow { width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%; }
+.dotGreen { width: 12px; height: 12px; background: #27c93f; border-radius: 50%; }
+
+.copyBtn {
+  background: #333;
+  color: #ccc;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.copyBtn:hover {
+  background: #444;
+  color: white;
+}
+
+.codeBlock {
+  padding: 20px;
+  margin: 0;
+  color: #d4d4d4;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+/* Interactive Poll */
+.pollSection {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px dashed var(--border-color);
+}
+
+.pollOptions {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pollBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pollBtn:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.activeVote {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+.voteThanks {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+/* Sidebar & Menu */
+.sidebar {
+  position: relative;
+}
+
+.stickySidebar {
+  position: sticky;
+  top: 2rem;
+}
+
+/* Scroll to Top Button */
+.scrollTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,112,243,0.3);
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.scrollTop:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .heroSection {
+    height: 300px;
+    margin: 1rem 5%;
+  }
+}

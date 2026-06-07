@@ -1,0 +1,255 @@
+.container {
+  --border-soft: var(--border);
+  --shadow-soft: rgba(15, 23, 42, 0.1);
+  position: relative;              
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+
+  /* Background image */
+  background-image: url("/library3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #060505;          /* fallback */
+  color: #fff;                        /* force text white for visibility */
+  font-weight: 600;                   /* semi-bold text */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay */
+  z-index: 0;
+}
+
+.container * {
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8); /* shadow for readability */
+}
+
+/* Header */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-soft);
+  padding-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.textContainer h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+.textContainer p {
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+/* User Info */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.date {
+  font-size: 12px;
+  color: #ddd;
+}
+
+/* Hero */
+.heroImage {
+  margin: 30px 0;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow-soft);
+  filter: brightness(70%);
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.9);
+}
+
+/* Layout */
+.content {
+  display: flex;
+  gap: 40px;
+}
+
+.post {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  border-left: 1px solid var(--border-soft);
+  padding-left: 20px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  color: #ffeb3b; /* highlight headings in yellow */
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+/* Buttons */
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.buttonGroup button {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.buttonGroup button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* SubSection */
+.subSection {
+  margin-top: 15px;
+  color: #f1f1f1;
+}
+
+/* Library */
+.librarySection {
+  background: rgba(0,0,0,0.6); /* semi-transparent card */
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border-soft);
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.libraryIntro {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.libraryContent {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.libraryText {
+  flex: 1;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.libraryImages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.libraryImage {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow-soft);
+}
+
+/* Feedback */
+.comment textarea {
+  width: 100%;
+  min-height: 90px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.feedbackInput button {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* Floating */
+.speechFloating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .libraryContent {
+    flex-direction: column;
+  }
+}
+.container {
+  position: relative;              /* allow overlay positioning */
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+
+  /* Background image */
+  background-image: url("/food4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;          /* fallback */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* black overlay with 40% opacity */
+  z-index: 0;                       /* behind text */
+}

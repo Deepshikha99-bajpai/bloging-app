@@ -15,12 +15,12 @@ const Navbar =() => {
 <Image src="/youtube.png" alt="youtube" width={24} height={24} />
 
 </div>
-<div className={styles.logo}>Deepshikhablog</div>
+<div className={styles.logo}>DAVV Blog</div>
 <div className={styles.links}>
 <ThemeToggle/>
 <Link href="/"className={styles.link}>Homepage</Link>
-<Link href="/"className={styles.link}>Contact</Link>
-<Link href="/"className={styles.link}>About</Link>
+<Link href="/contact" className={styles.link}>Contact</Link>
+<Link href="/centrallib/about" className={styles.link}>About</Link>
 <AuthLinks/>
 </div>
     </div>

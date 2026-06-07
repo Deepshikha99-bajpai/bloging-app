@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  poweredByHeader: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
