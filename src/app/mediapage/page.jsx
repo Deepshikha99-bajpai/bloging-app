@@ -4,7 +4,7 @@ import { useState } from "react";
 import Menu from "@/components/Menu/Menu";
 import styles from "./Page.module.css";
 import Image from "next/image";
-import Comments from "@/components/Comments/Comments";
+import Comments from "@/components/comments/Comments";
 import TextToSpeechButton from "@/components/TextToSpeechButton/TextToSpeechButton";
 
 const CollegePage = () => {

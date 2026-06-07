@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Menu from "@/components/Menu/Menu";
 import styles from "./page.module.css";
 import Image from "next/image";
-import Comments from "@/components/Comments/Comments";
+import Comments from "@/components/comments/Comments";
 
 const CollegeLibraryPage = () => {
   const [search, setSearch] = useState("");
